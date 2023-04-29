@@ -12,6 +12,11 @@
       <label for="password">Password:</label>
       <input type="password" id="password" name="password"><br><br>
       <input type="button" value="Login" onclick="validate()">
+      <div style="display: flex; align-items: center;">
+        <input type="password" id="password" name="password">
+        <button type="button" onclick="togglePassword()">Show</button>
+      </div><br><br>
+      <input type="button" value="Login" onclick="validate()">
     </form>
 
     <script>
@@ -28,6 +33,19 @@
         }
         else {
           alert("invalid username or password");
+        }
+      }
+
+      function togglePassword() {
+        var passwordField = document.getElementById("password");
+        var toggleButton = document.getElementsByTagName("button")[0];
+
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          toggleButton.textContent = "Hide";
+        } else {
+          passwordField.type = "password";
+          toggleButton.textContent = "Show";
         }
       }
     </script>
