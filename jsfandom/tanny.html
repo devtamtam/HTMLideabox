@@ -199,17 +199,13 @@
             ctx.fillText("落とした授業: " + getMissedLectures(), canvas.width / 2 - 100, canvas.height / 2 + 110);
         }
 
-        function getObtainedLectures() {
-            return Object.keys(lectures).flatMap(day =>
-                lectures[day].filter(lecture => !player.chances[lecture.name] && player.unitsObtained > 0)
-            ).map(lecture => lecture.name).join(", ");
-        }
+       function getObtainedLectures() {
+    return Object.keys(player.chances).filter(lectureName => !player.chances[lectureName] && player.unitsObtained > 0).join(", ");
+}
 
-        function getMissedLectures() {
-            return Object.keys(lectures).flatMap(day =>
-                lectures[day].filter(lecture => !player.chances[lecture.name] && player.unitsMissed > 0)
-            ).map(lecture => lecture.name).join(", ");
-        }
+function getMissedLectures() {
+    return Object.keys(player.chances).filter(lectureName => !player.chances[lectureName] && player.unitsMissed > 0).join(", ");
+} 
 
         gameLoop();
         spawnLectureBlocks();
