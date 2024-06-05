@@ -1,0 +1,166 @@
+header {
+    background-color: #f0f0f0;
+    padding-top: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 1px;
+    padding: 0;
+    text-align: center; /* 全体を中央寄せにする */
+  }
+  
+  h1 {
+    color: #333;
+    margin: 3;
+    font-size: 19px;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  p {
+  
+    font-size: 17px;
+  }
+  h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top:10px;
+    margin-bottom: 1px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+  
+  section {
+    margin-top: 3px;
+  }
+  
+  .ggfrmbox {
+    margin-top: 3px;
+    margin-bottom: 7px;
+    padding: 20px;
+    border: 1px solid #bcddf5;
+    border-width: 2px;
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    background:#fafafa;
+  }
+  
+  .cancelled {
+    text-decoration: line-through; /* 取り消し線を指定します。 */
+    color: black; /* テキストの色を黒に指定します。 */
+  }
+  
+  .extended-deadline {
+    font-weight: bold;
+    font-size: large;
+    color: red; /* テキストの色を赤に指定します。 */
+  }
+  
+  /*--------------------------------------
+    カード型_06
+  --------------------------------------*/
+  .l-wrapper_06 {
+    margin: 1rem auto;
+    margin-top: 1px;
+    width: 95%;
+    text-align: left;
+  }
+  
+  /* .l-wrapper_06:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 7px 34px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+      transition: all .5s;
+    }
+  */
+  
+  .card_06 {
+    background: rgba(240, 248, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 2px 5px #ccccc;
+  }
+  
+  .card-img_06 {
+    display: block;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+    max-width: 0%;
+    height: auto;
+  }
+  .card-content_06 {
+    padding: 8px 20px 20px;
+  }
+  .card-title_06 {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 700;
+  }
+  .card-text_06 {
+    color: rgb(58, 56, 56);
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0.2em;
+  }
+  /*.card-link_06 {
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding: 20px;
+    }
+    .card-link_06 a {
+      text-decoration: none;
+      color: #4f96f6;
+      margin: 0 10px;
+    }
+    .card-link_06 a:hover {
+      color: #6bb6ff;
+    }
+  */
+  
+  .card-content_06 p {
+    margin-bottom: 0;
+  }
+  /*CARDS 6*/
+  
+  .bottom-picture {
+    margin-top: 0.1em;
+  }
+  /*ft2*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    margin-bottom: 9px;
+    background-color: #8df0be; /* Replace with your desired neon color */
+    box-shadow: 0 0 3px #00ff7f, 0 0 35px #00ff7f; /* Adjust shadow size and color as needed */
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 3px;
+  }
+  
+  @media screen and (min-width: 40em) {
+    .company__info {
+      grid-column: span 2;
+    }
+  }
+  
